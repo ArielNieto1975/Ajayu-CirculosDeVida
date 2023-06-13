@@ -1,0 +1,73 @@
+.atrapas {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+}
+.card {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 200px;
+  transition: 0.8s all ease;
+}
+.card:hover {
+  box-shadow: 0 0 15px black;
+
+  opacity: 0.5;
+}
+
+span {
+  display: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  top: 0;
+  z-index: 1;
+  font-size: 24px;
+
+  color: black;
+}
+.card:hover + span {
+  display: block;
+}
+
+span {
+  display: none;
+  position: absolute;
+  max-width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+  font-size: 24px;
+
+  color: black;
+}
+
+.atrapa-title {
+  padding: 20px;
+  font-family: "Kalam", cursive;
+  font-size: 250%;
+  color: crimson;
+  text-shadow: 0 0 15px rgb(218, 241, 9);
+}
+.unidad {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  background-color: wheat;
+  box-shadow: 0 0 15px black;
+  border-radius: 10px;
+
+  width: 270px;
+  position: relative;
+  min-width: 200px;
+}
